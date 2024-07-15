@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
   theme: {
-    extend: {},
+    colors: {
+      transparent: '#7286D3',
+    },
   },
-  plugins: [],
 }
-
