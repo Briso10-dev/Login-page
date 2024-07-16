@@ -6,8 +6,8 @@ function Form() {
         <form className="flex flex-col gap-5" action="">
             <h1>Connexion a Blue Ocean</h1>
             <div className="flex flex-col gap-4">
-                <Input />
-                <Input />
+                <Input label="Email" type="Email" name="email" placeholder="example@gmail.com" />
+                <Input label="password" type="password" name="password" placeholder="********" />
                 <p>Mot de passe oublié? </p>
                 <Button />
             </div>
@@ -17,7 +17,7 @@ function Form() {
                 <div></div>
             </div>
             <footer>
-                
+
             </footer>
         </form>
     )

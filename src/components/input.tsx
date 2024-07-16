@@ -3,19 +3,19 @@ import { MdOutlineMail } from "react-icons/md";
 import { CiLock } from "react-icons/ci";
 
 // Interface definition
-export type inputProps = {
-  name: string,
-  icon: React.Component,
-  label: string,
+export interface inputProps {
+  name: string
+  type: string
+  label: string
   placeholder: string
 }
 
-function Input() {
+const Input: React.FC<inputProps> = ({ name, type, label, placeholder }) => {
   return (
     <div className="flex flex-col justify-center gap-2">
-      <label htmlFor="email">Email</label>
-      <input type="email" name="email" placeholder="abcexample@.com" className="input" />
-      
+      <label htmlFor={name}>{label}</label>
+      <input type={type} name={name} placeholder={placeholder} />
+
     </div>
   )
 }
