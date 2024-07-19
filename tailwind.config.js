@@ -7,7 +7,11 @@ export default {
   theme: {
     colors: {
       primary_color: '#7286D3',
-      secondary_color: '#FFF2F2'
+      secondary_color: '#19192C',
+      border_color: 'rgb(209 213 219)'
+    },
+    fontFamily:{
+      'popins': ['Poppins', 'sans-serif'],
     },
     extend: {
       backgroundImage:{
