@@ -1,4 +1,4 @@
-import {Input} from "./input"
+import { Input } from "./input"
 import Button from "./button"
 import { MdOutlineMail } from "react-icons/md";
 import { CiLock } from "react-icons/ci";
@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa"
 export default function Form() {
     return (
         <div className="h-[100vh] flex-1">
-            <form className="w-[45rem] h-full mx-auto  flex flex-col px-4 py-[5rem] gap-[5.5rem]" action="submit">
+            <form className="w-[45rem] h-full mx-auto  flex flex-col px-4 py-[13rem] gap-[5.5rem]" action="submit">
                 <h1 className="text-6xl text-secondary_color">Connexion a Blue Ocean</h1>
                 <Input label="Email" type="Email" name="email" icon={MdOutlineMail} placeholder="example@gmail.com" />
                 <Input label="password" type="password" name="password" icon={CiLock} placeholder="********" />
@@ -24,7 +24,7 @@ export default function Form() {
                     </div>
                     <div className="flex items-center justify-around">
                         <a href=""><FcGoogle className="w-[8rem] h-[6rem]" /></a>
-                        <a href=""><FaFacebook className="w-[8rem] h-[6rem] text-[#2697c4]" /></a>
+                        <a href=""><FaFacebook className="w-[8rem] h-[6rem] text-[#1877F2]" /></a>
                         <a href=""><FaGithub className="w-[8rem] h-[6rem] text-[gray]" /></a>
                     </div>
                 </footer>
